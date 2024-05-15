@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Calculadoras</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+        rel="stylesheet" type="text/css" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary"
+        style="background-color: rgb(235, 229, 229); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#1">imc</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#services">Edad de tu mascota</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#portfolio">Conocenos más</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success"><a  class="text-decoration-none tex" style="border-color: rgb(255, 140, 0);" href="iniciar.html">INICIA SESIÓN</a></button>
+                  </form>
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    <header class="masthead" style="background: linear-gradient(to bottom, #444343, #232020), brown;">
+
+
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">CALCULADORAS</h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Calculadoras útiles para diferentes usos</p>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-section bg-primary" id="about">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0" id="1" s> CALCULE EL ÍNDICE DE MASA CORPORAL (IMC)</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">Una medida de la obesidad se determina mediante el índice de masa
+                        corporal (IMC), que se calcula
+                        dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC = peso (kg)/
+                        [estatura (m)]2. Según el Instituto Nacional del Corazón, los Pulmones y la Sangre de los
+                        Estados Unidos (NHLBI), el sobrepeso se define como un IMC de más de 25. Se considera que una
+                        persona es obesa si su IMC es superior a 30. Usted puede determinar su IMC con la calculadora
+                        que se encuentra a continuación. Con la cifra del IMC puede averiguar su composición corporal en
+                        la tabla que aparece debajo de la calculadora.</p>
+
+                    <div class="container">
+                        <p class="text-white-75 mb-4">Sistema inglés</p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="text-white-75 mb-4">
+                                    <label class="form-label" for="n1">Peso (libras)</label>
+                                    <input class="form-control" type="text" id="n1">
+                                </div>
+
+                                <div class="text-white-75 mb-4">
+                                    <label class="form-label" for="n2">Estatura (pies)</label>
+                                    <input class="form-control" type="text" id="n2">
+                                </div>
+
+                                <div class="text-white-75 mb-4">
+                                    <label class="form-label" for="n3">Estatura (pulgadas)</label>
+                                    <input class="form-control" type="text" id="n3">
+                                </div>
+
+                                <button class="btn btn-primary" onclick="imc()">CALCULA</button>
+                                <p id="es" class="respuesta text-muted mb-0"></p>
+                            </div>
+                        </div><br>
+
+                        <div class="container">
+                            <p class="text-white-75 mb-4">Sistema métrico</p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="text-white-75 mb-4">
+                                        <label class="form-label" for="m1">Peso (Kilos)</label>
+                                        <input class="form-control" type="text" id="m1">
+                                    </div>
+
+                                    <div class="text-white-75 mb-4">
+                                        <label class="form-label" for="m2">Estatura (metros)</label>
+                                        <input class="form-control" type="text" id="m2">
+                                    </div>
+                                    <button class="btn btn-primary" onclick="imcm()">CALCULA</button>
+                                    <p id="ts" class="respuesta text-muted mb-0"></p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+    </section>
+
+
+    <section class="page-section" id="services">
+        <div class="container px-4 px-lg-5">
+            <h2 class="text-center mt-0">CALCULA LA EDAD DE TU MASCOTA</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"></i></div>
+                        <h3 class="h4 mb-2">Por fórmula clásica</h3>
+                        <label class="form-label" for="n4">Edad (años)</label>
+                        <input class="form-control" type="text" id="n4">
+                        <label class="form-label" for="n5">Edad (meses)</label>
+                        <input class="form-control" type="text" id="n5"><br>
+
+                        <p class="small text-center text-muted"> Para calcular la edad de tu mascota, considera que un cachorro envejece 15 veces más rápido
+                            que un humano en su primer año, y luego añade 6 años en el segundo. A continuación, añade
+                            unos 4 años por cada año adicional para obtener la edad de su perro en años humanos.</p>
+
+                        <button class="btn btn-primary btn-xl" onclick="edadhumana()">CALCULA</button><br>
+
+                        <p class="project-name" style="color: #444343;">RESULTADO:</p>
+                        <p id="gua" class="respuesta text-muted mb-0 fs-5 fs-md-4 fs-lg-3"></p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"></i></div>
+                        <h3 class="h4 mb-2">Ley de los 7</h3>
+                        <label class="form-label" for="q">Edad (años)</label>
+                        <input class="form-control" type="text" id="q"><br>
+
+
+                        <p class="small text-center text-muted">Aunque muchos creen que la edad de un perro se calcula multiplicando por siete su edad en
+                            años caninos, esto en realidad es una simplificación errónea. La verdad es que la edad de un
+                            perro varía dependiendo de su raza, tamaño y otros factores importantes. </p>
+                        <button class="btn btn-primary btn-xl" onclick="edad7()">CALCULA</button><br>
+
+                        <p class="project-name" style="color: #444343;">RESULTADO:</p>
+                        <p id="wow" class="respuesta text-muted mb-0 fs-5 fs-md-4 fs-lg-3"></p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"></i></div>
+                        <h3 class="h4 mb-2">Fórmula más reciente</h3>
+
+                        <label class="form-label" for="d">Edad (años)</label>
+                        <input class="form-control" type="text" id="d"><br>
+                        <p class="small text-center text-muted">La fórmula desarrollada por los investigadores norteamericanos para determinar la edad humana
+                            del perro sería la siguiente (siempre que el perro haya cumplido al menos un año de vida):
+                            multiplicar el logaritmo de la edad cronológica del perro por 16; a este resultado hay que
+                            sumar 31.</p>
+
+                        <button class="btn btn-primary btn-xl" onclick="nueva()">CALCULA</button><br>
+
+                        <p class="project-name" style="color: #444343;">RESULTADO:</p>
+                        <p id="miau" class="respuesta text-muted mb-0 fs-5 fs-md-4 fs-lg-3"></p>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="mt-5">
+                        <div class="mb-2"></div>
+                        <h3 class="h4 mb-2">Otras formas de saber la edad de tu mascota</h3><br>
+                        <ul class="list-group">
+                            <li class="list-group-item">Dientes</li>
+                            <li class="list-group-item">Canas</li>
+                            <li class="list-group-item">Comportamiento</li>
+                            <li class="list-group-item">Enfermedades</li>
+                            <li class="list-group-item">Sentidos</li>
+                            <li class="list-group-item">Otros signos</li>
+                            <li class="list-group-item">Calidad del pelaje</li>
+                            <li class="list-group-item">Cambio del metabolismo</li>
+                            <li class="list-group-item">Cambios hormonales</li>
+                            <li class="list-group-item">Pérdida de memoria</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="portfolio">
+        <h2 class="text-center mt-0">CONOCENOS MÁS</h2><br>
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <div class="col-lg-4 col-sm-6">
+
+                    <a class="portfolio-box" href="assets/img/IMG_20220707_140816.jpg">
+                        <img class="img-fluid" src="assets/img/IMG_20220707_140816.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">NOMBRE:</div>
+                            <div class="project-name">Wallace</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/IMG_20211019_062726 (1).jpg">
+                        <img class="img-fluid" src="assets/img/IMG_20211019_062726 (1).jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">EDAD:</div>
+                            <div class="project-name">3 años</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="assets/img/IMG_20220707_140816 (1).jpg">
+                        <img class="img-fluid" src="assets/img/IMG_20220707_140816 (1).jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">SOBRENOMBRE:</div>
+                            <div class="project-name">Wally</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <footer class="bg-light py-5" style="background-color: black; color: aliceblue;">
+        <div class="container px-4 px-lg-5">
+            <div class="small text-center text-muted">Luz Gabriela Castañeta Tarquino | Desafio #3 | Derechos reservados</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+
+    <script src="assets/js/scripts.js"></script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
