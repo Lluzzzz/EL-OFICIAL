@@ -1,0 +1,90 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+.container {
+    max-width: 300px;
+    height: 490px;
+    margin: 80px auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.recovery-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f4f2f2;
+    background-color: #f1ecec;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.recovery-btn {
+    width: 60%;
+    padding: 8px 15px;
+    background-color: #4ea6f2;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.recovery-btn:hover {
+    background-color: #0a1e2f;
+}
+
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #49a0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.letra {
+    color: #878484;
+}
+
+.ultimo a {
+    color: #272829;
+    text-decoration: none;
+}
+
+.o {
+    text-align: center;
+    color: #706868;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Establecer un borde inferior sólido */
+    line-height: 0.1em; /* Reducir el espacio entre la línea y el texto */
+    margin: 10px 0 20px; /* Ajustar el margen para espaciar la línea */
+}
+
+.o span {
+    background-color: #fff; /* Colocar un fondo blanco detrás del texto para ocultar la línea */
+    padding: 0 10px; /* Ajustar el relleno para que el texto no esté tan cerca de la línea */
+}
+
+h1 {
+    font-size: medium;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 0.4px;
+}
