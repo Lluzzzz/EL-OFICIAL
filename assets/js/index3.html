@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body style="background: linear-gradient( rgb(36, 35, 35), rgb(0, 0, 0));">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: rgb(235, 229, 229); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">HOME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>REGISTRARSE</h1>
+        </header>
+        <form id="registro-form">
+            <div class="mb-4">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-4">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp" required>
+            </div>
+            <div class="mb-4">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            <button type="submit" class="btn btn-primary mb-4">REGISTRARSE</button>
+            <br>
+            <p id="res">Su gmail es:</p>
+        </form>
+        <button type="button" onclick="registrarse()" class="btn my-3">INICIAR SESIÓN</button>
+    </div>
+    <footer class="bg-light py-5" style="background-color: black; color: aliceblue;">
+        <div class="small text-center text-muted">Luz Gabriela Castañeta Tarquino | Desafio #3 | Derechos reservados</div>
+    </footer>
+    <script src="assets/js/link.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
